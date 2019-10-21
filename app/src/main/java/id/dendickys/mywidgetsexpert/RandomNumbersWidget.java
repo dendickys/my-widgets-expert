@@ -8,7 +8,7 @@ import android.widget.RemoteViews;
 /**
  * Implementation of App Widget functionality.
  */
-public class RundomNumbersWidget extends AppWidgetProvider {
+public class RandomNumbersWidget extends AppWidgetProvider {
 
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
@@ -17,7 +17,7 @@ public class RundomNumbersWidget extends AppWidgetProvider {
 
         CharSequence widgetText = context.getString(R.string.appwidget_text);
         // Construct the RemoteViews object
-        RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.rundom_numbers_widget);
+        RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.random_numbers_widget);
         views.setTextViewText(R.id.appwidget_text, lastUpdate);
 
         // Instruct the widget manager to update the widget
